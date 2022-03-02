@@ -13,7 +13,7 @@ browser = webdriver.Chrome()
 # browser.refresh() # 새로고침
 
 # elem = browser.find_element_by_id("query") # 검색창 id=query 를 통해서 찾음
-# elem.send_keys("나도코딩") # 검색창에 텍스트 입력
+# elem.send_keys("텍스트입력") # 검색창에 텍스트 입력
 # elem.send_keys(Keys.ENTER) # 엔터
 # elem = browser.find_element_by_tag_name("a") # a 태그의 element 가져옴
 # elems = browser.find_elements_by_tag_name("a") # 복수의 a 태그 가져옴
@@ -24,7 +24,7 @@ browser = webdriver.Chrome()
 browser.get("http://daum.net")
 elem = browser.find_element_by_name("q")
 elem.clear() # 내용 지우기
-elem.send_keys("나도코딩")
+elem.send_keys("텍스트입력")
 elem =browser.find_element_by_xpath('//*[@id="daumSearch"]/fieldset/div/div/button[2]')
 elem.click()
 browser.close() # 현재 탭만 닫기
@@ -63,7 +63,7 @@ browser.refresh()
 elem = browser.find_element_by_id('query')
 
 # 글자 입력하기
-elem.send_keys('나도코딩')
+elem.send_keys('텍스트입력')
 
 # enter 치기
 from selenium.webdriver.common.keys import Keys
@@ -85,13 +85,13 @@ browser.get('http://daum.net')
 elem = browser.find_element_by_name('q')
 
 # 글자 입력하기
-elem.send_keys("나도코딩")
+elem.send_keys("텍스트입력")
 
 # 글자 지우기
 elem.clear()
 
 # 글자 입력하기
-elem.send_keys("나도코딩")
+elem.send_keys("텍스트입력")
 
 # 검색 버튼 찾기
 elem = browser.find_element_by_xpath('//*[@id="daumSearch"]/fieldset/div/div/button[2]')
